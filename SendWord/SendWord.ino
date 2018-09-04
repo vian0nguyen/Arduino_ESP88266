@@ -79,16 +79,20 @@ void loop() {
 }
 //edit this
 char *words[] = {
-  "could", "you", "see", "me", "in",
-  "this", "fog", "we", "are", "just",
-  "dreamy",
   // by sending the raw unicode byte sequence, we can use emoji!
-  "\U0001F4A7" //droplet
-  //"\U0002614" //rain umbrella
+  "\U000026C8", //cloud rain lighting
+  "\U0001F4A7", //droplet
+  "\U0001F327", //cloud rain
+  "\U0001F326", //cloud sun rain
+  "\U0001F32B", //fog
+  "\U00002601", //cloud
+  "\U00002614", //rain umbrella
+  "\U000026A1" //lighting
+  
 };
 
 // length of *words[]
-int word_count = 12;
+int word_count = 8;
 
 void sendWord() {
   // building the JSON request body...
